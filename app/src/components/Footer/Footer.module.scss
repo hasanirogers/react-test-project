@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+
+  ul {
+    display: inline-flex;
+    gap: 1rem;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-gray);
+  }
+
+  .active {
+    transform: scale(1.5);
+    background: var(--color-primary);
+  }
+}

@@ -1,0 +1,15 @@
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+}
+
+.logo {
+  margin: auto;
+  max-width: 200px;
+}
+
+.hamburger,
+.question {
+  width: 32px;
+}
