@@ -9,4 +9,4 @@ Please include unit tests and how many hours you spent on the poject.
 
 ## Notes
 
-Time Spent: 
+Time Spent: 6 hours
