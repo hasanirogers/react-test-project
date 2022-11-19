@@ -7,7 +7,7 @@ const Footer = (props) => {
   const { steps } = useContext(UIContext);
 
   const makeBullets = () => {
-    return steps.map(step => <li className={step === activeStep ? styles.active : null}></li>);
+    return steps.map((step, index) => <li key={index} className={step === activeStep ? styles.active : null}></li>);
   }
 
   return (

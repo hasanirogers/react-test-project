@@ -16,6 +16,24 @@ export const UIContext = React.createContext({
   name: {
     name: '',
     setName: () => {},
+  },
+  help: {
+    optionA: '',
+    setOptionA: () => {},
+    optionB: '',
+    setOptionB: () => {},
+    optionC: '',
+    setOptionC: () => {},
+    option4: '',
+    setOption4: () => {},
+  },
+  date: {
+    month: '',
+    setMonth: () => {},
+    day: '',
+    setDay: () => {},
+    year: '',
+    setYear: () => {},
   }
 });
 

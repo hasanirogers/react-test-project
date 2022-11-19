@@ -1,10 +1,23 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { UIContext } from "../../App";
 import Tracker from "../../components/Tracker";
 
 const ViewName = () => {
   const activeStep = 'name';
   const { name, setName } = useContext(UIContext).name;
+  const [hasChanged, setHasChanged] = useState(false);
+
+  const handleChange = (event) => {
+    setHasChanged(true);
+    setName(event.target.value);
+  }
+
+  const makeInput = () => {
+    if (hasChanged) {
+      return <input type="text" onChange={handleChange} />
+    }
+    return <input type="text" value={name} onChange={handleChange} />
+  }
 
   return (
     <section>
@@ -12,7 +25,7 @@ const ViewName = () => {
         <Tracker activeStep={activeStep} />
         <form>
           <h2>What's your name?</h2>
-          <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
+          {makeInput()}
         </form>
       </div>
     </section>
