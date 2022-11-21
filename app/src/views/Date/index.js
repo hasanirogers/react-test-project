@@ -15,15 +15,15 @@ const ViewHelp = () => {
           <fieldset className="help">
             <label>
               <div>Month</div>
-              <input type="text" value={month} onChange={(event) => setMonth(event.target.value)} />
+              <input type="text" defaultValue={month} onChange={(event) => setMonth(event.target.value)} />
             </label>
             <label>
               <div>Day</div>
-              <input type="text" value={day} onChange={(event) => setDay(event.target.value)} />
+              <input type="text" defaultValue={day} onChange={(event) => setDay(event.target.value)} />
             </label>
             <label>
               <div>Year</div>
-              <input type="text" value={year} onChange={(event) => setYear(event.target.value)} />
+              <input type="text" defaultValue={year} onChange={(event) => setYear(event.target.value)} />
             </label>
           </fieldset>
         </form>
