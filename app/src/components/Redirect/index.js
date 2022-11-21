@@ -5,7 +5,7 @@ const Redirect = (props) => {
   const navigate = useNavigate();
   useEffect(() => {
     navigate(props.to);
-  });
+  }, [navigate, props.to]);
 }
 
 export default Redirect;
